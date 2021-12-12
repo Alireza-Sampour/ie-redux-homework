@@ -1,0 +1,115 @@
+@font-face {font-family: Shabnam; src:url('../font/Shabnam-FD.ttf');}
+
+html, body, div, span{
+    margin: 0; padding: 0;
+}
+
+.text-center{text-align: center}
+
+table{border-collapse: collapse}
+th {border-bottom: 1px solid rgba(37, 47, 64, 0.09);}
+td {border-bottom: 1px solid rgba(37, 47, 64, 0.05);}
+td, th {padding: 12px 10px;}
+.tbl_body_small{display: flex;flex-wrap: wrap}
+.tbl_head_small{display: none;}
+.tbl_body_small .tbl_head_small_row{margin-bottom: 20px;background-color: #FFFFFF;width: 100%;border-radius: 7px;-webkit-box-shadow: -1px 1px 9px -2px rgba(0, 0, 0, 0.09);box-shadow: -1px 1px 9px -2px rgba(0, 0, 0, 0.09);text-align: right}
+.tbl_body_small .tbl_head_small_row td{width: 100%;display: flex;border-bottom:none}
+.tbl_body_small .tbl_head_small_row td .tbl_head_small{width: 30%;display: block;}
+.tbl_body_small .tbl_head_small_row td .tbl_data{width: 70%;padding: 0 50px}
+
+html, body{height: 100%;direction: rtl;font-family:Shabnam;}
+body{display: flex;flex-wrap: wrap;background-color: #F8F9FA;}
+
+.width-5{width: 5%} .width-10{width: 10%} .width-15{width: 15%} .width-19{width: 19%} .width-100{width: 100%}
+.main_dash{display: flex;flex-wrap: wrap;width: 100vw;height:100%;justify-content: center}
+.main_dash_left{width: 90%;transition: all ease 500ms;}
+
+.content_main{width: 100%;height:auto;display: flex;flex-wrap: wrap;padding: 10px 0 30px;min-height: 85.5vh;overflow-y: auto;max-height: 85.5vh;}
+
+:focus{outline: none;}
+.col-3{float: left;  position: relative;z-index: 1;margin-top: 20px; min-width:300px !important;}
+
+input[type="text"]{font: 15px/8px Shabnam;height:38px;font-size:14px; color: #333; width: 97%; box-sizing: border-box; letter-spacing: 1px;text-align: right;border: 1px solid rgba(37, 47, 64, 0.09);border-radius: 7px;transition: all ease 500ms;background-color: rgba(128, 128, 128, 0.01);}
+.effect-19{border: 1px solid #ccc; padding: 7px 14px; transition: 0.4s; background: transparent;}
+.effect-19:focus,.effect-19:hover{border-color: #0275d8}
+.effect-19 ~ label{position: absolute; left: -8px; width: 100%; top: 8px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 1px;}
+.effect-19:focus ~ label, .has-content.effect-19 ~ label{top: -18px; left: 0; font-size: 12px; color: #0275d8; transition: 0.3s;}
+
+.btn_form{margin: 20px auto 0;border:none;border-radius: 7px;font-family: Shabnam;font-size: 14pt;padding: 10px 20px;cursor: pointer;min-width: 100px;box-sizing: border-box;background-color: #0275d8;transition: all 0.3s;color: #fff}
+.btn_form:hover{box-shadow: 0 0 0 4px #0275D844;animation-name: shadow_btn;animation-duration: 1100ms;animation-iteration-count: infinite}
+
+@keyframes shadow_btn {
+0%{ box-shadow: 0 0 1px 2px #0275D844;}
+50%{ box-shadow:-1px 1px 9px 4px #0275D844;}
+100% {box-shadow: 0 0 1px 2px #0275D844;}}
+
+@media only screen and (max-width: 992px) {
+    .main_dash_left{width: 100%;}
+}
+
+@media only screen and (max-width: 620px) {
+.full_small{width: 100%}
+}
+
+.danger {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #d90429;
+    background: #d90429;
+  }
+
+  .danger:hover {
+    background: #fff;
+    color: #d90429
+  }
+
+  .warning {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #FB8B12;
+    background: #FB8B12;
+  }
+
+  .warning:hover {
+    background: #fff;
+    color: #FB8B12
+  }
+
+  .success {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #57cc99;
+    background: #57cc99;
+  }
+  
+  .success:hover {
+    background: #fff;
+    color: #57cc99
+  }
